@@ -60,4 +60,5 @@ reset.addEventListener('click', function() {
 
 numInput.addEventListener('change', function() {
 	playingTo.textContent = numInput.value;
+	winningScore  = Number(numInput.value);
 });
