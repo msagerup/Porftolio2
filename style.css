@@ -21,17 +21,56 @@ HEADER
 
 
 .hero {
-  width: 100%;
-  height: 700px;
+  height: 800px;
   background-color: #2B2B2B;
   position: relative;
+ 
   
 }
+
+
+/*
+
+CONTENT FOR LINKS PAGES
+
+*/
+
+.work_content {
+  height: 800px;
+  background-color: #CCCCCC;
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+
+  
+}
+
+.work_content_right {
+  height: 800px;
+  float: right;
+  background-color: #333;
+  background-image: url("./img/code-wallpaper-3.jpg");
+  background-size: contain;
+}
+
+.work_content_left {
+  height: 800px;
+  float: left;
+}
+
+.site_content {
+  height: 800px;
+  background-color: #555555;
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+}
+
 
 /*GRID SYSTEM*/
 
 .row {
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 .col-1 {width: 8.33%;}
@@ -72,7 +111,9 @@ TYPOGRAPHY
 }
 
 p {
-  color: white;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 20px;
 }
 
 li {
@@ -83,17 +124,34 @@ h1 {
   font-size: 4rem
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.0rem;
+  font-family: 'audimatregular';
+  color: white;
+  line-height: 65px;
 }
 h3 {
   font-size: 2rem;
 }
 
+.big {
+  font-size: 3.5rem;
+ 
+}
 
 
 /*
 Container styling
 */
+
+
+.banner {
+  height: 55px;
+  background-color: #2B2B2B;
+}
+
+.site_content {
+  overflow: hidden;
+}
 
 .container {
   padding-left: 5%;
@@ -101,7 +159,20 @@ Container styling
 }
 
 
+.left_intro {
+  padding-top: 200px;
+  float: left;
+}
 
+.right_intro {
+  padding-top: 90px;
+  background-color: #CCCCCC;
+  float: right;
+  height: 800px;
+  overflow: hidden;
+  padding-left: 40px;
+  padding-right: 40px;
+}
 
 /*ANIMATION*/
 
@@ -148,8 +219,8 @@ Container styling
 
 .pt-page-moveToTop {
  
-	-webkit-animation: moveToTop .8s ease both;
-	animation: moveToTop .8s ease both;
+	-webkit-animation: moveToTop .5s ease both;
+	animation: moveToTop .5s ease both
 }
 
 
