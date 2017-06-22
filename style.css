@@ -11,8 +11,106 @@
 
 body {
    box-sizing: border-box;
-  background: #333;
+  background: #2B2B2B;
 }
+
+
+/*
+Banner Button
+*/
+
+.button_home {
+  padding-top: 5px;
+
+}    
+  
+
+.button-row {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.button-row > div {
+  position: relative;
+  width: 160px;
+  height: 50px;
+  margin: 0 15px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+.button-row > div > a {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+  -moz-transform: translateZ(-25px);
+  -ms-transform: translateZ(-25px);
+  -o-transform: translateZ(-25px);
+  transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform 0.25s;
+  -moz-transition: -moz-transform 0.25s;
+  transition: transform 0.25s;
+}
+.button-row > div > a::before, .button-row > div > a::after {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 160px;
+  height: 50px;
+  position: absolute;
+  border: 3px solid black;
+  box-sizing: border-box;
+  content: attr(title);
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.button-row > div > a::before {
+  background-color: #FE6A00;
+  color: #fff;
+  -webkit-transform: rotateY(0deg) translateZ(25px);
+  -moz-transform: rotateY(0deg) translateZ(25px);
+  -ms-transform: rotateY(0deg) translateZ(25px);
+  -o-transform: rotateY(0deg) translateZ(25px);
+  transform: rotateY(0deg) translateZ(25px);
+}
+.button-row > div > a::after {
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+  -moz-transform: rotateX(90deg) translateZ(25px);
+  -ms-transform: rotateX(90deg) translateZ(25px);
+  -o-transform: rotateX(90deg) translateZ(25px);
+  transform: rotateX(90deg) translateZ(25px);
+}
+.button-row > div > a:hover {
+  -webkit-transform: translateZ(-25px) rotateX(-90deg);
+  -moz-transform: translateZ(-25px) rotateX(-90deg);
+  -ms-transform: translateZ(-25px) rotateX(-90deg);
+  -o-transform: translateZ(-25px) rotateX(-90deg);
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+
+
+
 
 
 /*
@@ -35,12 +133,18 @@ CONTENT FOR LINKS PAGES
 
 */
 
+.work_ul {
+  padding-left: 10%;
+  padding-top: 50px;
+}
+
 .work_content {
   height: 800px;
-  background-color: #CCCCCC;
+  background-color: #333333;
   position: absolute;
   z-index: -2;
   width: 100%;
+  overflow: hidden;
 
   
 }
@@ -48,14 +152,34 @@ CONTENT FOR LINKS PAGES
 .work_content_right {
   height: 800px;
   float: right;
-  background-color: #333;
-  background-image: url("./img/code-wallpaper-3.jpg");
-  background-size: contain;
+  background-color: #555555;
+  background-size: fill;
+
 }
+
+/* CONTENT BOX STYLING FOR WORK ALL SAMPLE WORK CONTAINERS
+*/
+
+.box_container {
+  }
+
+.content_box {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  display: inline-block;
+  margin: 5px;
+
+}
+
+/*
+----------------------------------------------------------
+*/
 
 .work_content_left {
   height: 800px;
   float: left;
+
 }
 
 .site_content {
@@ -111,14 +235,28 @@ TYPOGRAPHY
 }
 
 p {
-  color: #333333;
+  color: white;
   font-size: 1.2rem;
   line-height: 20px;
 }
 
-li {
+
+
+/*
+
+MAIN NAV
+
+*/
+
+.work_link, 
+.contact_link,
+.project_link {
   display: inline-block;
 }
+
+
+
+
 
 h1 {
   font-size: 4rem
@@ -145,8 +283,10 @@ Container styling
 
 
 .banner {
-  height: 55px;
+  height: 60px;
   background-color: #2B2B2B;
+  z-index: 0;
+  position: relative;
 }
 
 .site_content {
@@ -155,18 +295,18 @@ Container styling
 
 .container {
   padding-left: 5%;
-  padding-right: 5%;
+
 }
 
 
 .left_intro {
-  padding-top: 200px;
+  padding-top: 150px;
   float: left;
 }
 
 .right_intro {
   padding-top: 90px;
-  background-color: #CCCCCC;
+  background-color: #333333;
   float: right;
   height: 800px;
   overflow: hidden;

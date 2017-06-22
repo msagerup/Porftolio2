@@ -3,9 +3,9 @@ var hero = document.querySelector('.hero');
 var intro = document.querySelector('.site_content');
 
 
-var mainLinksOne = document.querySelectorAll('li')[0];
-var mainLinksTwo = document.querySelectorAll('li')[1];
-var mainLinksThree = document.querySelectorAll('li')[2];
+var mainLinksOne = document.querySelector('.work_link');
+var mainLinksTwo = document.querySelector('.project_link');
+var mainLinksThree = document.querySelector('.contact_link');
 
 hero.addEventListener('click', function() {
   hero.classList.add('pt-page-moveToTop');
@@ -20,17 +20,6 @@ mainLinksOne.addEventListener('click', function(){
 })
 
 
-mainLinksOne.addEventListener('click', function(){
-	document.body.style.background = 'green'
-});
-
-mainLinksTwo.addEventListener('click', function(){
-	document.body.style.background = 'yellow'
-});
-
-mainLinksThree.addEventListener('click', function(){
-	document.body.style.background = 'red'
-});
 
 
 var myButton = document.querySelector('button');
