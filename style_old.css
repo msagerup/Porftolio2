@@ -1,0 +1,379 @@
+@font-face {
+  font-family: 'audimatregular';
+  src: url('./font/audimat-regular-webfont.woff2') format('woff2'),
+   url('./font/audimat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+body {
+   box-sizing: border-box;
+  background: #2B2B2B;
+}
+
+
+/*
+Banner Button
+*/
+
+.button_home {
+  padding-top: 5px;
+
+}    
+  
+
+.button-row {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.button-row > div {
+  position: relative;
+  width: 160px;
+  height: 50px;
+  margin: 0 15px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+.button-row > div > a {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+  -moz-transform: translateZ(-25px);
+  -ms-transform: translateZ(-25px);
+  -o-transform: translateZ(-25px);
+  transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform 0.25s;
+  -moz-transition: -moz-transform 0.25s;
+  transition: transform 0.25s;
+}
+.button-row > div > a::before, .button-row > div > a::after {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 160px;
+  height: 50px;
+  position: absolute;
+  border: 3px solid black;
+  box-sizing: border-box;
+  content: attr(title);
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.button-row > div > a::before {
+  background-color: #FE6A00;
+  color: #fff;
+  -webkit-transform: rotateY(0deg) translateZ(25px);
+  -moz-transform: rotateY(0deg) translateZ(25px);
+  -ms-transform: rotateY(0deg) translateZ(25px);
+  -o-transform: rotateY(0deg) translateZ(25px);
+  transform: rotateY(0deg) translateZ(25px);
+}
+.button-row > div > a::after {
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+  -moz-transform: rotateX(90deg) translateZ(25px);
+  -ms-transform: rotateX(90deg) translateZ(25px);
+  -o-transform: rotateX(90deg) translateZ(25px);
+  transform: rotateX(90deg) translateZ(25px);
+}
+.button-row > div > a:hover {
+  -webkit-transform: translateZ(-25px) rotateX(-90deg);
+  -moz-transform: translateZ(-25px) rotateX(-90deg);
+  -ms-transform: translateZ(-25px) rotateX(-90deg);
+  -o-transform: translateZ(-25px) rotateX(-90deg);
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+
+
+
+
+
+/*
+HEADER
+*/
+
+
+.hero {
+  height: 800px;
+  background-color: #2B2B2B;
+  position: relative;
+ 
+  
+}
+
+
+/*
+
+CONTENT FOR LINKS PAGES
+
+*/
+
+.work_ul {
+  padding-left: 10%;
+  padding-top: 50px;
+}
+
+.work_content {
+  height: 800px;
+  background-color: #333333;
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  overflow: hidden;
+
+  
+}
+
+.work_content_right {
+  height: 800px;
+  float: right;
+  background-color: #555555;
+  background-size: fill;
+
+}
+
+/* CONTENT BOX STYLING FOR WORK ALL SAMPLE WORK CONTAINERS
+*/
+
+.box_container {
+  }
+
+.content_box {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  display: inline-block;
+  margin: 5px;
+
+}
+
+/*
+----------------------------------------------------------
+*/
+
+.work_content_left {
+  height: 800px;
+  float: left;
+
+}
+
+.site_content {
+  height: 800px;
+  background-color: #555555;
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+}
+
+
+/*GRID SYSTEM*/
+
+.row {
+  padding-top: 50px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+/*
+TYPOGRAPHY
+*/
+
+.logo {
+  font-size: 10rem;
+  color: white;
+  padding-left: 2%;
+   position:absolute;
+  top: calc(50% + -80px);
+  font-family: 'audimatregular'
+}
+
+.hero_links {
+  color: white;
+  text-align: center;
+  font-family: 'audimatregular';
+  font-size: 2rem;
+  letter-spacing: 10px;
+  margin: 0 auto;    
+}
+
+p {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 20px;
+}
+
+
+
+/*
+
+MAIN NAV
+
+*/
+
+.work_link, 
+.contact_link,
+.project_link {
+  display: inline-block;
+}
+
+
+
+
+
+h1 {
+  font-size: 4rem
+}
+h2 {
+  font-size: 2.0rem;
+  font-family: 'audimatregular';
+  color: white;
+  line-height: 65px;
+}
+h3 {
+  font-size: 2rem;
+}
+
+.big {
+  font-size: 3.5rem;
+ 
+}
+
+
+/*
+Container styling
+*/
+
+
+.banner {
+  height: 60px;
+  background-color: #2B2B2B;
+  z-index: 0;
+  position: relative;
+}
+
+.site_content {
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 5%;
+
+}
+
+
+.left_intro {
+  padding-top: 150px;
+  float: left;
+}
+
+.right_intro {
+  padding-top: 90px;
+  background-color: #333333;
+  float: right;
+  height: 800px;
+  overflow: hidden;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/*ANIMATION*/
+
+.animator {
+  position:absolute;
+  bottom: calc(20% + -80px);
+  right: calc(-10%);
+
+  color: white;
+  animation-name: slide-right;
+  animation-duration: 1s;
+  
+}
+
+@keyframes slide-right {
+  from {
+    margin-right: 150%;
+    width: 300%;
+    
+    background-color: white;
+  }
+  
+  
+  
+  60% {
+    margin-right: 50%;
+    width: 40px;
+   
+  }
+  
+ 65% {
+    margin-right: 50%;
+    width: 40px;
+  }
+  
+  
+  to {
+    margin-right: 80%;
+    width: 40%;
+   
+  }
+}
+
+
+.pt-page-moveToTop {
+ 
+	-webkit-animation: moveToTop .5s ease both;
+	animation: moveToTop .5s ease both
+}
+
+
+
+@keyframes moveToTop {
+	from { }
+	to { 
+    transform: translateY(-100%);
+    transform: translateY(-100%); 
+  }
+}
+
+
+/*
+PRACTICE!!!
+*/
