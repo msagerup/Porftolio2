@@ -1,160 +1,170 @@
+@font-face {
+	font-family: LOT;
+	src: url(font/LOT.otf);
+}
+
+@font-face {
+	font-family: butler_regular;
+	src: url(font/Butler_Regular.otf);
+}
+
+@font-face {
+	font-family: butler_medium;
+	src: url(font/Butler_Medium.otf);
+}
+
+@font-face {
+	font-family: bt-iny;
+	src: url(font/BFTinyHand-Regular.otf);
+}
+
+@font-face {
+	font-family: cutepunk;
+	src: url(font/Cutepunk_Regular.otf);
+}
+
+@font-face {
+	font-family: norwester;
+	src: url(font/norwester.otf);
+}
 
 body {
+	
 	box-sizing: border-box;
 	overflow: hidden;
-	font-family: 'Ubuntu', sans-serif;
-
-
-
 }
 
 
 /*
-TYPOGRAHY
+*********************************************************************
+								LEFT SIDE
+*********************************************************************
 */
 
-h1.retroshadow {
-  color: white;
-  letter-spacing: .05em;
-      text-shadow: 9px 4px 0px rgb(184, 215, 177), 14px 7px 0px rgba(255, 255, 255, 0);
-  font-size: 4rem;
-  transition: 0.9s cubic-bezier(0.8, 0.13, 0.1, 1.43);
-
-}
-
-.tagline {
-	padding-top: 50px;
-}
-
-.tagline p {
-	line-height: 1.5;
-}
-
-
-/*h1.retroshadow:hover {
-  color: white;
-  letter-spacing: .05em;
-  text-shadow: 15px 4px 0px rgb(81, 227, 194), 20px 17px 0px rgb(246, 246, 246);
-  font-size: 6rem;
-
-}
-/*
-
-CONTENT
-
-
-
-*/
-
-.content {
-	background-color: white;
-	height: 900px;
-	border-radius: 0 200em 0 0;
-}
-
-.left {
-	background-color: white;
-	width: 40px;
-	height: 900px;
-	float: left;
-}
-
-.intro_section {
-	margin-top: 160px;
-}
-
-
-
-
-
-
-
-/*
-
- RIGHT NAVIGATION
-
-*/
-
-
-.right_nav {
-	background-color: #111111;
-	width: 40px;
-	height: 900px;
-	border-radius: 3000em 0 0 300em;
-	display: inline-block;
-	transition: 0.9s cubic-bezier(0.8, 0.03, 0.1, 1.43);
-	padding-left: 0;
+.left_side_filler {
 	position: fixed;
-	right: 0;
-	overflow: hidden;
-}
-
-.icons_nav_container {
-	display: table-cell;
-	height: 800px;
-	width: 40px;
-	vertical-align: middle;
-
-
-
+	width: 15%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	background-color: white;
 
 }
 
-.icons_nav {
-	width: 40px;
-	height: 40px;
-	background-color: red;
-	display: inline-block;
-	line-height: 40px;
+.left_circle_container {
+	position: fixed;
+	top: -25%;
+	width: 600px;
+	height: 150%;
+	border-radius: 300px / 800px;
+	/*overflow: hidden; */
+	background-color: white;
+
+}
+
+.header {
+	position: fixed;
+	top: 40px;
+	z-index: 999;
+	right: 72%;
+	text-align: right;
+	margin-right: 30px;
+	left: 0px;
+}
+
+.name_tag {
+	position: fixed;
+	color: black;
+	z-index: 998;
+	top: 781px;
+    text-align: right;
+    right: 75%;
+    left: 0px;
+}
+
+.circle_menu_container {
+	position: fixed;
+	z-index: 997;
+	top: 418px;
+    left: 14%;
+}
+
+/*
+*******************************************************************
+							RIGHT SIDE
+*******************************************************************
+*/
+
+.right_side {
+	height: 1200px;
+	width: 75%;
+	margin-left: 25%;
+	bottom: 0;
+	top: 0;
+
+}
+
+
+#cv {
 	text-align: center;
+	background-image: url(img/intro_background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+
+}
+
+#header_cv_container {
+	padding-top: 470px;
+    padding-right: 91px;
+}
+
+#header_cv_container h2 {
+	color: white;
+}
+
+#about {
+	background-color: teal;
+}
+
+#work {
+	background-color: yellow;
+}
+
+/* NAVIGATION
+*/
+ul.main_nav li {
+	display: inline;
+}
+
+/*
+TYPOGRAPHY
+*/
+
+h1 {
+	font-family: norwester;
+	font-size: 6em;
+	color: teal;
+	text-transform: uppercase;
+}
+
+h2 {
+font-family: norwester;
+	font-size: 3em;
+	color: #333;
+
+}
+
+h3 {
+	font-family: norwester;
+	font-size: em;
+	color: #333;
 	
 }
 
-
-.right_nav:hover {
-	width: 250px;
-	border-radius: 300em 0 0 800em;
+p {
+	line-height: 1.5;
 
 }
-
-.right_nav_outer {
-	width: 40px;
-	height: 900px;
-	background-color: #333;
-	float: left;
-
-
-
-}
-
-
-/*
-
-Header
-
-*/
-
-header {
-	background-color: white;
-	height: 80px;
-	width: 100%;
-}
-
-
-/*
-Footer
-
-*/
-footer {
-	position: fixed;
-	z-index: 1000;
-	overflow: hidden;
-	bottom: 0px;
-	left: 0px;
-	width: 100%;
-	background-color: white;
-	height: 40px;
-}
-
-
 
