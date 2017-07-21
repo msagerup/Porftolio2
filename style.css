@@ -77,17 +77,31 @@ body {
 	position: fixed;
 	color: black;
 	z-index: 998;
-	top: 781px;
+	top: 873px;
     text-align: right;
-    right: 75%;
+    right: 74%;
     left: 0px;
 }
+
+.name_tag h1 {
+	font-family: norwester;
+    font-size: 2em;
+    color: teal;
+    text-transform: uppercase;
+}
+
 
 .circle_menu_container {
 	position: fixed;
 	z-index: 997;
-	top: 418px;
-    left: 14%;
+	top: 460px;
+    left: 4%;
+}
+
+.circle_menu_container h2 {
+	padding-left: 20px;
+    float: left;
+
 }
 
 /*
@@ -110,7 +124,7 @@ body {
 	text-align: center;
 	background-image: url(img/intro_background.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	height: 100%;
 
 }
@@ -126,7 +140,38 @@ body {
 
 #about {
 	background-color: teal;
+	background-image: url(img/looking.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100%;
 }
+
+#header_about_container {
+	padding-top: 531px;
+    padding-right: 91px;
+    padding-left: 242px;
+}
+
+#header_about_container h3 {
+	font-size: 5rem;
+    letter-spacing: 10px;
+    color: white;
+}
+
+#header_about_container h4 {
+	font-size: 2em;
+    margin-left: 35px;
+    margin-top: 1px;
+    margin-bottom: 23px;
+}
+
+#header_about_container p {
+	font-size: 1.2rem;
+	color: white;
+}
+
+
+
 
 #work {
 	background-color: yellow;
@@ -151,8 +196,9 @@ h1 {
 
 h2 {
 font-family: norwester;
-	font-size: 3em;
+	font-size: 4em;
 	color: #333;
+	padding-top: 10px;
 
 }
 
