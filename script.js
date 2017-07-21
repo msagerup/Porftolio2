@@ -14,6 +14,9 @@ function randomColors () {
 }
 
 
+
+
+
 $('#cv').bind('mousewheel', function(e){
     if(e.originalEvent.wheelDelta / 120 < 0) {
         $('#cv').hide();
