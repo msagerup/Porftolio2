@@ -31,17 +31,6 @@
 
 
 
-/*
-**********************************************
-MEDIA QUERIES
-**********************************************
-*/
-
-/*
-Phones
-*/
-
-
 
 
 
@@ -66,24 +55,18 @@ body {
 
 
 .left_side_filler {
-	position: fixed;
-	width: 15%;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	z-index: 10;
-	background-color: white;
+	display: none;
 
 }
 
 .left_circle_container {
 	position: fixed;
-	top: -25%;
-	width: 600px;
-	height: 150%;
-	border-radius: 300px / 800px;
+	top: 0%;
+	width: 420px;
+	height: 200px;
+	border-radius: 0;
 	/*overflow: hidden; */
-	background-color: white;
+	background-color: yellow;
 
 }
 
@@ -95,6 +78,7 @@ body {
 	text-align: right;
 	margin-right: 30px;
 	left: 0px;
+	background-color: red;
 }
 
 .name_tag {
@@ -125,6 +109,7 @@ body {
 .circle_menu_container h2 {
 	padding-left: 20px;
     float: left;
+    display: none;
 
 }
 
@@ -135,11 +120,9 @@ body {
 */
 
 .right_side {
-	height: 1200px;
-	width: 75%;
-	margin-left: 25%;
-	bottom: 0;
-	top: 0;
+	width: 420px;
+    margin: 0;
+
 
 }
 
@@ -150,12 +133,14 @@ body {
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 100%;
+	margin-top: 200px;
+	background-color: #000;
 
 }
 
 #header_cv_container {
-	padding-top: 470px;
-    padding-right: 91px;
+	padding-top: 250px;
+    padding-right: 0px;
 }
 
 #header_cv_container h2 {
@@ -168,12 +153,13 @@ body {
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 100%;
+    margin-top: 200px;
 }
 
 #header_about_container {
-	padding-top: 531px;
-    padding-right: 91px;
-    padding-left: 242px;
+	padding-top: 200px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 #header_about_container h3 {
@@ -202,7 +188,7 @@ body {
 
 #header_work_container {
 	padding-top: 191px;
-    margin-left: 180px;
+    margin-left: 0px;
     text-align: left;
 }
 
@@ -211,7 +197,7 @@ body {
 	background-color: red;
 	width: 100%;
     
-    height: 600px;
+    height: 400px;
 }
 
 #projects_container p {
@@ -256,8 +242,8 @@ PROJECTS SCROLLER
 }
 
 .project_work {
-	width: 600px;
-	height: 550px;
+	width: 350px;
+    height: 290px;
 	background-color: blue;
 	margin-left: 10px;
 }

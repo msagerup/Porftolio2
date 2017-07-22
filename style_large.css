@@ -41,6 +41,38 @@ MEDIA QUERIES
 Phones
 */
 
+@media screen and (max-width: 480px){
+	
+}
+
+/*
+Tablets
+*/
+
+@media screen and (max-width: 720px){
+	
+}
+/*
+Small desktop
+*/
+
+@media screen and (max-width: 1280px){
+	
+}
+
+/*
+Large desktop
+*/
+
+@media screen and (max-width: 1920px){
+	
+}
+
+
+/*
+*********************************************
+*/
+
 
 
 
