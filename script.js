@@ -18,40 +18,83 @@ function randomColors () {
 
 
 $('#cv').bind('mousewheel', function(e){
-    if(e.originalEvent.wheelDelta / 120 < 0) {
+    setTimeout(function() { 
+        if(e.originalEvent.wheelDelta / 120 < 0) {
         $('#cv').hide();
         $('#about').show();
         setBackgroundColor()
-      
-    
-    }
-
+        };
+    }, 200);
 });
 
 $('#about').bind('mousewheel', function(e){
-    if(e.originalEvent.wheelDelta / 120 < 0) {
-        $('#about').hide();
-        $('#work').show();
-        setBackgroundColor()
+    setTimeout(function () {
+        if(e.originalEvent.wheelDelta / 120 < 0) {
+            $('#about').hide();
+            $('#work').show();
+            setBackgroundColor()
         
-    
-    } else {
-    	$('#about').hide();
-    	$('#cv').show();
-    	setBackgroundColor()
-    }
-    
+        } else {
+            $('#about').hide();
+            $('#cv').show();
+            setBackgroundColor()
+        };
+    }, 200);
 });
 
+
 $('#work').bind('mousewheel', function(e){
-    if(e.originalEvent.wheelDelta / 120 > 0) {
-        $('#work').hide();
-        $('#about').show();
-        setBackgroundColor()
-    }
+    setTimeout(function () {
+        if(e.originalEvent.wheelDelta / 120 < 0) {
+            $('#work').hide();
+            $('#contact').show();
+            setBackgroundColor()
     
+        } else {
+            $('#work').hide();
+            $('#about').show();
+        };
+    }, 200);
 });
+
+$('#contact').bind('mousewheel', function(e){
+    setTimeout(function () {
+        if(e.originalEvent.wheelDelta / 120 > 0) {
+            $('#contact').hide();
+            $('#work').show();
+            setBackgroundColor()
+        };
+    
+    }, 200);
+        
+});
+
 
 function setBackgroundColor () {
 	document.getElementsByTagName("body")[0].style.background="-webkit-linear-gradient(-90deg," + randomColors() + ", " + randomColors() +") fixed, transparent";
 }
+
+
+// WORK SLIDER
+
+$( "#left" ).click(function() {
+  $( ".project_work:first" ).animate({
+    'left': '-=200'
+  }, {
+    duration: 600,
+    step: function( now, fx ){
+      $( ".project_work:gt(0)" ).css( "left", now );
+    }
+  });
+});
+
+$( "#right" ).click(function() {
+  $( ".project_work:first" ).animate({
+    'left': '+=200'
+  }, {
+    duration: 600,
+    step: function( now, fx ){
+      $( ".project_work:gt(0)" ).css( "left", now );
+    }
+  });
+});

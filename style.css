@@ -84,6 +84,7 @@ body {
 	border-radius: 300px / 800px;
 	/*overflow: hidden; */
 	background-color: white;
+	z-index: 100;
 
 }
 
@@ -221,8 +222,28 @@ body {
 	font-weight: 400;
 }
 
+#contact {
+	background-color: #f9f9f9;
+	height: 100%;
+    padding-top: 200px;
+    padding-left: 200px;
+}
 
+#contact h4 {
+	font-size: 1.5em;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
 
+}
+
+#contact hr {
+
+}
+
+#contact p {
+	padding-top: 20px;
+}
 /*
 ******************************************
 PROJECTS SCROLLER
@@ -253,6 +274,7 @@ PROJECTS SCROLLER
 #project_works_holder {
 	padding-top: 10px;
  	display: inline-flex;
+ 	width: 100%;
 }
 
 .project_work {
@@ -260,6 +282,11 @@ PROJECTS SCROLLER
 	height: 550px;
 	background-color: blue;
 	margin-left: 10px;
+	 left: 50px;
+	 position: relative;
+
+
+
 }
 
 /* NAVIGATION
@@ -289,7 +316,7 @@ font-family: norwester;
 
 h3 {
 	font-family: norwester;
-	font-size: em;
+	font-size: 3.5em;
 	color: #656565;
 	
 }
