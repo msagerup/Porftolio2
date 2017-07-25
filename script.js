@@ -74,14 +74,15 @@ function setBackgroundColor () {
 	document.getElementsByTagName("body")[0].style.background="-webkit-linear-gradient(-90deg," + randomColors() + ", " + randomColors() +") fixed, transparent";
 }
 
-
+// ----------------------------------------------------
 // WORK SLIDER
+// -----------------------------------------------------
 
 $( "#left" ).click(function() {
   $( ".project_work:first" ).animate({
-    'left': '-=200'
+    'left': '-=680'
   }, {
-    duration: 600,
+    duration: 800,
     step: function( now, fx ){
       $( ".project_work:gt(0)" ).css( "left", now );
     }
@@ -90,9 +91,9 @@ $( "#left" ).click(function() {
 
 $( "#right" ).click(function() {
   $( ".project_work:first" ).animate({
-    'left': '+=200'
+    'left': '+=680'
   }, {
-    duration: 600,
+    duration: 800,
     step: function( now, fx ){
       $( ".project_work:gt(0)" ).css( "left", now );
     }
