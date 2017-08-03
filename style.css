@@ -429,26 +429,88 @@ Contact Form
 	padding-top: 100px;
 }
 
+#input_container_row1 {
+	width: 700px;
+    display: flex;
+
+}
+
+#message_container {
+	display: table-caption;
+	padding: 12px;
+}
+
+
+
+
+#input_container_row2 {
+	    width: 700px;
+    display: flex;
+	top: -10px;
+    position: relative;
+}
+
+
+#contact_form {
+		}
+
 #contact_form label {
 	font-family: 'Lato';
+
+    float:left;
+    padding-bottom: 3px;
+
+
+}
+
+#contact_form input {
+	height: 35px;
+	width: 300px;
+	padding: 5px 8px;
+	background-color: #333;
+	color: white;
+	font-family: 'Lato';
+	font-size: 1.1rem;
+	color: white;
+	-moz-transition: padding .25s; 
+    -webkit-transition: padding .25s; 
+    -o-transition: padding .25s;
+    transition: width .25s;
+}
+
+#contact_form input:focus {
+	background-color: #656565;
+	border: 4px solid #FF6600;
+	width: 350px;
+
+}
+
+#contact_form textarea {
+	width: 653px;
+	padding: 5px 8px;
+	background-color: #333;
+	font-family: 'Lato';
+	color: white;
 	font-size: 1.1rem;
 }
 
-#contact_form ul {
-    width:750px;
-    list-style-type:none;
-    list-style-position:outside;
-    margin:0px;
-    padding:0px;
+#contact_form textarea:focus {
+	background-color: #656565;
+	border: 4px solid #FF6600;
 }
+
+
+
 #contact_form li{
     padding:12px; 
-    border-bottom:1px solid #eee;
-    position:relative;
+    list-style: none;
+   	margin-right: 30px;
+}
 
 .form_hint {
 	font-family: 'Lato';
-	font-size: 1.1rem;
+	font-size: 0.9rem;
+    color: red;
 }
 
 input:invalid {

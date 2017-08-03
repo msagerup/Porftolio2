@@ -134,40 +134,43 @@
 
       <div id="contact_form_container">
         <form id="contact_form" action="">
-        <li>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="first_name" placeholder="Your first name" required>
-          <span class="form_hint">Please Enter Your First Name</span>
-        </li>
-
-        <li>
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="last_name" placeholder="Your Last Name" required>
-          <span class="form_hint">Please Enter your Last Name</span>
-        </li>
-
-        <li>
-          <label for="company">Company Name</label>
-          <input type="text" id="c_name" name="company_name" placeholder="Your Compays Name">
-        </li>
-        
-        <li>
-          <label for="pnumber">Phone Number</label>
-          <input type="number" id="pnumber" name="phone_number" placeholder="Your Phone Number">
-        </li>
-
-        <li>
-          <label for="email">Your E-mail</label>
-          <input type="email" id="email" name="e_mail" placeholder="E-mail" required>
-        
-        <span class="form_hint">Please Enter A Valid E-Mail</span>
-        </li>
-
-        <li>
-          <label for="message">Please enter your message or query</label>
-          <textarea name="messagetext" id="message_t" cols="30" rows="10" required></textarea>
-        </li>
           
+          <div id="input_container_row1">  
+            <li>
+              <label for="fname">First Name:</label>
+              <input type="text" id="fname" name="first_name" placeholder="Your first name" required>
+              <span class="form_hint">Please Enter Your First Name</span>
+            </li>
+
+            <li>
+              <label for="lname">Last Name:</label>
+              <input type="text" id="lname" name="last_name" placeholder="Your Last Name" required>
+              <span class="form_hint">Please Enter your Last Name</span>
+            </li>
+        </div><!-- Input Container row 1-->
+
+        <div id="input_container_row2"> 
+            <li>
+              <label for="company">Company Name:</label>
+              <input type="text" id="c_name" name="company_name" placeholder="Your Compays Name">
+            </li>
+            
+            <li>
+              <label for="email">Your E-mail:</label>
+              <input type="email" id="email" name="e_mail" placeholder="E-mail" required>
+              <span class="form_hint">Please Enter A Valid E-Mail</span>
+            </li>
+        </div> <!-- Input Conatiner row 2 -->
+        
+          
+
+        <div id="message_container">  
+          <label for="message" style="width: 100%;">Please enter your message or query:</label>
+          <textarea name="messagetext" id="message_t" cols="30" rows="10" required></textarea>
+        </div><!-- Message container -->
+        
+        
+           <button class="submit" type="submit">Submit Form</button>
 
 
         </form>
