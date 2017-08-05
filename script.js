@@ -99,3 +99,24 @@ $( "#right" ).click(function() {
     }
   });
 });
+
+
+ 
+
+
+/*
+
+const project_box = document.getElementsByClassName('project_work');
+const project_box_slider = document.getElementsByClassName('description');
+
+
+for (let i = 0; i < project_box.length; i++ ) {
+    project_box[i].addEventListener('click', function () {
+        console.log(this);
+        return project_box_slider;
+
+        
+    });
+}
+
+*/
