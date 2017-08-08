@@ -319,6 +319,15 @@ PROJECTS SCROLLER
 }
 
 
+/*
+
+*************************************************
+PROJECTS
+*************************************************
+*/
+
+
+
 #project_works_holder {
 	    padding-top: 10px;
     display: inline-flex;
@@ -353,8 +362,6 @@ PROJECT DESCRIPTION
 */
 
 
-
-
 .description {
 	width: 600px;
     background-color: white;
@@ -362,16 +369,33 @@ PROJECT DESCRIPTION
     position: relative;
     bottom: 10px;
     opacity: .9;
-   
-     transition: all 900ms cubic-bezier(0.59, 0.12, 0, 1.52);
-
-  }
-/*
-.description:hover{ 
-	height: 500px;
-	 bottom: 400px;
+    transition: all 900ms cubic-bezier(0.59, 0.12, 0, 1.52);
+    padding: 10px 15px;
  }
- */
+
+ .description_header {
+
+ }
+
+ .description_header h4 {
+ 	font-size: 2rem;
+
+ }
+
+ .description_body {
+
+ }
+
+ .description_footer {
+ 	float: right;
+ 	position: relative;
+ 	top: 25%;
+ }
+
+/*
+************************************************
+*/
+
 
 /* NAVIGATION
 */
@@ -527,3 +551,7 @@ input:invalid {
 input:valid {
 	border: 2px solid black;
 }
+
+/*
+************************************************
+*/
