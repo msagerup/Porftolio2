@@ -10,7 +10,7 @@ function randomColors () {
 	var r = Math.floor(Math.random() * 256); 
 	var g = Math.floor(Math.random() * 256); 
 	var b = Math.floor(Math.random() * 256); 
-	return "rgba(" + r + ", " + g + ", " + b + ",0.2 " + ")"
+	return "rgba(" + r + ", " + g + ", " + b + ",0.4 " + ")"
 }
 
 
@@ -22,7 +22,6 @@ $('#cv').bind('mousewheel', function(e){
         if(e.originalEvent.wheelDelta / 120 < 0) {
         $('#cv').hide();
         $('#about').show();
-        setBackgroundColor()
         };
     }, 200);
 });
@@ -32,12 +31,10 @@ $('#about').bind('mousewheel', function(e){
         if(e.originalEvent.wheelDelta / 120 < 0) {
             $('#about').hide();
             $('#work').show();
-            setBackgroundColor()
         
         } else {
             $('#about').hide();
             $('#cv').show();
-            setBackgroundColor()
         };
     }, 200);
 });
@@ -48,7 +45,7 @@ $('#work').bind('mousewheel', function(e){
         if(e.originalEvent.wheelDelta / 120 < 0) {
             $('#work').hide();
             $('#contact').show();
-            setBackgroundColor()
+         
     
         } else {
             $('#work').hide();
@@ -62,7 +59,7 @@ $('#contact').bind('mousewheel', function(e){
         if(e.originalEvent.wheelDelta / 120 > 0) {
             $('#contact').hide();
             $('#work').show();
-            setBackgroundColor()
+           
         };
     
     }, 200);
@@ -101,7 +98,27 @@ $( "#right" ).click(function() {
 });
 
 
- 
+ // MODALS 
+
+ const modal = document.querySelector('.modal');
+ const fb_clone = document.getElementById('fb_clone');
+ const container = document.querySelector('.container-fluid');
+
+
+ fb_clone.onclick = function () {
+     modal.style.display = 'block'
+     modal.style.background = randomColors()
+     container.style.webkitFilter = "blur(5px)";
+ }
+
+ // Click outside Modal, closes it.
+
+ window.onclick = function (e) {
+     if (e.target === modal) {
+        modal.style.display = 'none';
+        container.style.webkitFilter = "blur(0px)";
+     }
+ }
 
 
 /*
