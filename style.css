@@ -71,62 +71,77 @@ body {
 	left: 0;
 	top: 0;
 	bottom: 0;
-	z-index: 10;
+	z-index: 1;
 	background-color: white;
 
 }
 
 .left_circle_container {
-	position: fixed;
-	top: -25%;
-	width: 600px;
-	height: 150%;
-	border-radius: 300px / 800px;
-	/*overflow: hidden; */
-	background-color: white;
-	z-index: 100;
-
+    position: fixed;
+    top: -25%;
+    left: -60px;
+    width: 670px;
+    height: 150%;
+    border-radius: 300px / 800px;
+    overflow: hidden;
+    background-color: white;
+    z-index: 100;
 }
 
-.header {
-	position: fixed;
-	top: 40px;
-	z-index: 999;
-	right: 72%;
-	text-align: right;
-	margin-right: 30px;
-	left: 0px;
+#name_tag {
+    position: fixed;
+    top: 75px;
+    left: 50px;
 }
 
-.name_tag {
-	position: fixed;
-	color: black;
-	z-index: 998;
-	top: 873px;
-    text-align: right;
-    right: 74%;
+
+#intro {
+    z-index: 2;
+    position: fixed;
+    top: 229px;
+    left: 50px;
+    margin-right: 75%;
+}
+
+#side_writing {
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 677px;
+    left: -25px;
+    background-color: #f7d800;
+    padding: 20px;
+    font-family: norwester;
+}
+#left_footer2 {
+    width: 103%;
+    height: 28px;
+    background-color: rgb(74, 74, 74);
+    position: relative;
+    top: 401px;
+    left: -5px;
+    z-index: 1;
+}
+
+#left_footer3 {
+    width: 90%;
+    height: 14px;
+    background-color: rgb(74, 74, 74);
+    position: relative;
+    top: 694px;
+    left: -5px;
+    z-index: 1;
+}
+
+#left_footer4 {
+    width: 95%;
+    height: 93px;
+    background-color: rgb(245, 90, 0);
+    position: relative;
+    top: 1000px;
     left: 0px;
-}
-
-.name_tag h1 {
-	font-family: norwester;
-    font-size: 2em;
-    color: teal;
-    text-transform: uppercase;
-}
-
-
-.circle_menu_container {
-	position: fixed;
-	z-index: 997;
-	top: 460px;
-    left: 4%;
-}
-
-.circle_menu_container h2 {
-	padding-left: 20px;
-    float: left;
-
+    z-index: 1;
 }
 
 /*
@@ -408,10 +423,10 @@ TYPOGRAPHY
 */
 
 h1 {
-	font-family: norwester;
-	font-size: 6em;
-	color: teal;
-	text-transform: uppercase;
+    font-family: bt-iny;
+    font-size: 3em;
+    color: #f55a00;
+    text-transform: uppercase;
 }
 
 h2 {
