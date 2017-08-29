@@ -4,7 +4,7 @@ RANDOM BACKGROUND COLOR
 
 */ 
 
-document.getElementsByTagName("body")[0].style.background="-webkit-linear-gradient(-90deg," + randomColors() + ", " + randomColors() +") fixed, transparent";
+//document.getElementsByTagName("body")[0].style.background="-webkit-linear-gradient(-90deg," + randomColors() + ", " + randomColors() +") fixed, transparent";
 
 function randomColors () {
 	var r = Math.floor(Math.random() * 256); 
@@ -22,6 +22,7 @@ $('#cv').bind('mousewheel', function(e){
         if(e.originalEvent.wheelDelta / 120 < 0) {
         $('#cv').hide();
         $('#about').show();
+        checkSideBar();
         };
     }, 200);
 });
@@ -31,10 +32,12 @@ $('#about').bind('mousewheel', function(e){
         if(e.originalEvent.wheelDelta / 120 < 0) {
             $('#about').hide();
             $('#work').show();
+            checkSideBar();
         
         } else {
             $('#about').hide();
             $('#cv').show();
+            checkSideBar();
         };
     }, 200);
 });
@@ -45,11 +48,14 @@ $('#work').bind('mousewheel', function(e){
         if(e.originalEvent.wheelDelta / 120 < 0) {
             $('#work').hide();
             $('#contact').show();
+            checkSideBar();
          
     
         } else {
             $('#work').hide();
             $('#about').show();
+            checkSideBar();
+
         };
     }, 200);
 });
@@ -119,6 +125,27 @@ $( "#right" ).click(function() {
         container.style.webkitFilter = "blur(0px)";
      }
  }
+
+
+var sideTab = document.querySelector('#side_writing');
+var home = document.querySelector('#cv');
+var about = document.querySelector('#about');
+var work = document.querySelector('#work');
+var contact = document.querySelector('#contact');
+
+// CHANGE SIDE WRITING TAB
+
+function checkSideBar () {
+    if(about.style.display === 'block') {
+        sideTab.innerHTML = 'About';
+    } else if (work.style.display === 'block') {
+        sideTab.innerHTML = 'Work';
+    } else if (contact.style.display === 'block') {
+        sideTab.innerHTML = 'Contact';
+    } else if (home.syle.display === 'block') {
+        sideTab.innerHTML = 'Home';
+    }
+} 
 
 
 /*
