@@ -41,6 +41,51 @@ MEDIA QUERIES
 Phones
 */
 
+/*
+TYPOGRAPHY
+*/
+
+h1 {
+    font-family: bt-iny;
+    font-size: 5em;
+    color: #f55a00;
+    text-transform: uppercase;
+}
+
+h2 {
+font-family: norwester;
+	font-size: 4em;
+	color: #333;
+	padding-top: 10px;
+
+}
+
+h3 {
+	font-family: norwester;
+	font-size: 3.5em;
+	color: #656565;
+	
+}
+
+h4 {
+	font-family: norwester;
+	font-size: 2rem;
+	color: #656565;
+}
+
+h5 {
+	font-family: norwester;
+	font-size: 1.2rem;
+	color: #656565;
+}
+
+p {
+	line-height: 1.1;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 400;
+
+}
 
 
 
@@ -90,7 +135,7 @@ body {
 
 #name_tag {
     position: fixed;
-    top: 75px;
+    top: 8px;
     left: 50px;
 }
 
@@ -129,7 +174,7 @@ body {
     height: 14px;
     background-color: rgb(74, 74, 74);
     position: relative;
-    top: 694px;
+    top: 408px;
     left: -5px;
     z-index: 1;
 }
@@ -159,24 +204,105 @@ body {
 
 }
 
+/*
+******************************************
+CV / Home
+******************************************
+*/
+
+#intro_cv {
+	color: white;
+}
 
 #cv {
 	text-align: center;
-	background-image: url(img/intro_background.png);
+	/*background-image: url(img/intro_background.png); */
+	    background-color: rgba(146, 255, 190, 0.11);
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 100%;
 
 }
 
-#header_cv_container {
-	padding-top: 470px;
-    padding-right: 91px;
+#left_header {
+    background-color: #4e4e4e;
+    height: 107px;
+    width: 821px;
+    float: left;
 }
 
+#header_cv_container {
+    padding-top: 51px;
+    margin-left: 820px;
+    /* margin-top: 300px; */
+    padding-right: 91px;
+    background-color: #656565;
+}
 #header_cv_container h2 {
 	color: white;
 }
+
+
+#cv_body {
+	background-color: #d4d9d6;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+	
+}
+
+#cv_form_left {
+height: 89%;
+width: 55%;
+float: left;
+background-color: #f3f3f3;
+padding: 20px 20px 20px 180px;
+}
+
+.cv_l_left {
+
+}
+
+.cv_d_left {
+	padding-left: 15px;
+	padding-top: 10px;
+	font-size: 1rem;
+    padding-bottom: 30px;
+    font-weight: 100;
+}
+
+
+#cv_form_right {
+	height: 80%;
+	width: 45%;
+	float: right;
+	background-color: #f9f9f9;
+	padding: 20px 50px 20px 80px;
+
+}
+
+.cv_form_header {
+	padding-bottom: 25px;
+}
+
+
+.cv_seperator {
+    height: 65px;
+    width: 3px;
+    background-color: #00bcf5;
+    float: right;
+    margin-top: 27px;
+    margin-left: 30px;
+}
+
+
+
+
+/*
+******************************************
+ABOUT
+******************************************
+*/
 
 #about {
 	background-color: teal;
@@ -418,45 +544,6 @@ ul.main_nav li {
 	display: inline;
 }
 
-/*
-TYPOGRAPHY
-*/
-
-h1 {
-    font-family: bt-iny;
-    font-size: 3em;
-    color: #f55a00;
-    text-transform: uppercase;
-}
-
-h2 {
-font-family: norwester;
-	font-size: 4em;
-	color: #333;
-	padding-top: 10px;
-
-}
-
-h3 {
-	font-family: norwester;
-	font-size: 3.5em;
-	color: #656565;
-	
-}
-
-h4 {
-	font-family: norwester;
-	font-size: 3rem;
-	color: #656565;
-}
-
-p {
-	line-height: 1.1;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.1rem;
-	font-weight: 400;
-
-}
 
 
 
