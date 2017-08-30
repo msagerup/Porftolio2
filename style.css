@@ -224,6 +224,12 @@ CV / Home
 
 }
 
+.cv_banner {
+    height: 300px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
 #left_header {
     background-color: #4e4e4e;
     height: 107px;
