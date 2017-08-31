@@ -171,7 +171,7 @@ body {
 
 #left_footer3 {
     width: 90%;
-    height: 14px;
+    height: 1px;
     background-color: rgb(74, 74, 74);
     position: relative;
     top: 408px;
@@ -209,6 +209,41 @@ body {
 CV / Home
 ******************************************
 */
+#profile_header {
+    /* margin-left: 94px; */
+    padding-top: 90px;
+    margin-right: 641px;
+    display: inline-flex;
+}
+
+#profile_photo {
+	text-align: left;
+}
+
+#profile_photo img {
+	width: 150px;
+	height: 150px;
+}
+
+#profile_tagtext {
+    padding-left: 30px;
+    padding-top: 49px;
+    padding-right: 30px;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-family: norwester;
+    color: #656565;
+}
+
+#profile_tagtext h5 {
+    font-family: Lato;
+    font-weight: 100;
+    font-size: 1rem;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
 
 #intro_cv {
 	color: white;
@@ -225,7 +260,7 @@ CV / Home
 }
 
 .cv_banner {
-    height: 300px;
+    height: 280px;
     width: 100%;
     background-color: whitesmoke;
 }
@@ -265,7 +300,8 @@ background-color: #f3f3f3;
 padding: 20px 20px 20px 180px;
 }
 
-.cv_l_left {
+.cv_l_left { 
+	color: #00bcf5;
 
 }
 
@@ -295,7 +331,7 @@ padding: 20px 20px 20px 180px;
 .cv_seperator {
     height: 65px;
     width: 3px;
-    background-color: #00bcf5;
+    background-color: #f55a00;
     float: right;
     margin-top: 27px;
     margin-left: 30px;
