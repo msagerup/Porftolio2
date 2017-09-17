@@ -148,6 +148,48 @@ function checkSideBar () {
 } 
 
 
+var cv1 = document.querySelector('#cv_1');
+var cv2 = document.querySelector('#cv_2');
+var cv3 = document.querySelector('#cv_3');
+
+var cvContext = document.querySelector('#cv_context');
+var cvSeperator = document.querySelectorAll('.cv_seperator');
+var allCvList = document.querySelectorAll('cvs');
+
+
+// Content Object for CV's
+
+var cvContent = {
+    text: {
+        FrontEnd : 'Full stack developer studying full time on JavaScript devlopment with Python',
+        Paypal:    'Working as a Account Manager in Dublin',
+        Symantec:  'Account Manager in Norway, working towards small to medium sized businesses in Norway Working in close partnership with Symantec\'s partner and Distributier\'s '
+    }
+}
+
+cv1.addEventListener('mouseover', function () {
+    cvContext.innerHTML = cvContent.text.FrontEnd;
+});
+
+cv2.addEventListener('mouseover', function () {
+    cvContext.innerHTML = cvContent.text.Paypal;
+});
+
+cv3.addEventListener('mouseover', function () {
+    cvContext.innerHTML = cvContent.text.Symantec;
+});
+
+for (let i = 0; i < cvSeperator.length; i++) {
+    cvSeperator[i].addEventListener('click', function () {
+        console.log(this);
+    })
+}
+
+
+
+
+
+
 /*
 
 const project_box = document.getElementsByClassName('project_work');
