@@ -341,7 +341,14 @@ padding: 20px 20px 20px 180px;
 	
 }
 
+/*
+On hover with JS styling
+*/
 
+.cv_highlight {
+	background-color: #333;
+
+}
 
 /*
 ******************************************

@@ -154,7 +154,7 @@ var cv3 = document.querySelector('#cv_3');
 
 var cvContext = document.querySelector('#cv_context');
 var cvSeperator = document.querySelectorAll('.cv_seperator');
-var allCvList = document.querySelectorAll('cvs');
+var allCvList = document.querySelectorAll('.cvs');
 
 
 // Content Object for CV's
@@ -179,16 +179,37 @@ cv3.addEventListener('mouseover', function () {
     cvContext.innerHTML = cvContent.text.Symantec;
 });
 
-for (let i = 0; i < cvSeperator.length; i++) {
-    cvSeperator[i].addEventListener('click', function () {
+for (let i = 0; i < allCvList.length; i++) {
+    allCvList[i].addEventListener('mouseover', function () {
+        this.classList.add('cv_highlight')
+        //cvContext.classList.add('cv_highlight')
         console.log(this);
+
+        // add color style
+
+        // add styling to cvContext
+
     })
 }
 
+for (let i = 0; i < allCvList.length; i++) {
+    allCvList[i].addEventListener('mouseout', function () {
+        this.classList.remove('cv_highlight')
+        console.log(this);
+
+    })
+}
+
+/*
+
+I stede for look so vil dette fungere ? 
+
+allCvList.addEventListener('mouseout', function(e) {
+    e.target.style.color= 'blue';
+})
 
 
-
-
+*/
 
 /*
 
