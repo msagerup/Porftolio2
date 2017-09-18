@@ -179,14 +179,27 @@ cv3.addEventListener('mouseover', function () {
     cvContext.innerHTML = cvContent.text.Symantec;
 });
 
+
+function sep () {
+
+        for (let i = 0; i < cvSeperator.length; i++) {
+        cvSeperator[i].addEventListener('mouseover', function() {
+            this.classList.add('cv_sepGrow')
+        })
+    }
+}
+
+
+
+
 for (let i = 0; i < allCvList.length; i++) {
     allCvList[i].addEventListener('mouseover', function () {
+        // Change background color on hover
         this.classList.add('cv_highlight')
-        //cvContext.classList.add('cv_highlight')
-        console.log(this);
-
-        // add color style
-
+        
+        // add color style on seperators
+        
+        sep()
         // add styling to cvContext
 
     })
@@ -195,7 +208,7 @@ for (let i = 0; i < allCvList.length; i++) {
 for (let i = 0; i < allCvList.length; i++) {
     allCvList[i].addEventListener('mouseout', function () {
         this.classList.remove('cv_highlight')
-        console.log(this);
+       
 
     })
 }

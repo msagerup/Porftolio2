@@ -302,6 +302,7 @@ padding: 20px 20px 20px 180px;
 
 .cv_l_left { 
 	color: #00bcf5;
+	padding: 10px 0px 0px 10px;
 
 }
 
@@ -337,6 +338,11 @@ padding: 20px 20px 20px 180px;
     margin-left: 30px;
 }
 
+.cv_sepGrow {
+	height: 100px;
+	background-color: blue;
+}
+
 #cv_context {
 	
 }
@@ -346,7 +352,7 @@ On hover with JS styling
 */
 
 .cv_highlight {
-	background-color: #333;
+	background-color: #f9f9f9;
 
 }
 
