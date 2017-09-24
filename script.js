@@ -1,6 +1,6 @@
 /*
 
-RANDOM BACKGROUND COLOR
+RANDOM BACKGROUND COLOR FOR MODULS
 
 */ 
 
@@ -14,68 +14,32 @@ function randomColors () {
 }
 
 
-
-
-
-$('#cv').bind('mousewheel', function(e){
-    setTimeout(function() { 
-        if(e.originalEvent.wheelDelta / 120 < 0) {
-        $('#cv').hide();
-        $('#about').show();
-        checkSideBar();
-        };
-    }, 200);
-});
-
-$('#about').bind('mousewheel', function(e){
-    setTimeout(function () {
-        if(e.originalEvent.wheelDelta / 120 < 0) {
-            $('#about').hide();
-            $('#work').show();
-            checkSideBar();
-        
-        } else {
-            $('#about').hide();
-            $('#cv').show();
-            checkSideBar();
-        };
-    }, 200);
-});
-
-
-$('#work').bind('mousewheel', function(e){
-    setTimeout(function () {
-        if(e.originalEvent.wheelDelta / 120 < 0) {
-            $('#work').hide();
-            $('#contact').show();
-            checkSideBar();
-         
-    
-        } else {
-            $('#work').hide();
-            $('#about').show();
-            checkSideBar();
-
-        };
-    }, 200);
-});
-
-$('#contact').bind('mousewheel', function(e){
-    setTimeout(function () {
-        if(e.originalEvent.wheelDelta / 120 > 0) {
-            $('#contact').hide();
-            $('#work').show();
-           
-        };
-    
-    }, 200);
-        
-});
-
-
 function setBackgroundColor () {
-	document.getElementsByTagName("body")[0].style.background="-webkit-linear-gradient(-90deg," + randomColors() + ", " + randomColors() +") fixed, transparent";
+    document.getElementsByTagName("body")[0].style.background="-webkit-linear-gradient(-90deg," + randomColors() + ", " + randomColors() +") fixed, transparent";
 }
+
+//***********************************************
+
+// PAGE NAVIGATION
+
+
+
+
+
+
+
+
+
+//************************************************
+
+
+
+
+
+
+
+
+
 
 // ----------------------------------------------------
 // WORK SLIDER
