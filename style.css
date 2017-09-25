@@ -210,9 +210,9 @@ CV / Home
 ******************************************
 */
 #profile_header {
-    /* margin-left: 94px; */
-    padding-top: 90px;
-    margin-right: 641px;
+    margin-left: -122px;
+    padding-top: 68px;
+    margin-right: 834px;
     display: inline-flex;
 }
 
@@ -223,6 +223,7 @@ CV / Home
 #profile_photo img {
 	width: 150px;
 	height: 150px;
+    border-radius: 20%;
 }
 
 #profile_tagtext {
@@ -246,13 +247,13 @@ CV / Home
 }
 
 #intro_cv {
-	color: white;
+	color: #efefef;
 }
 
 #cv {
 	text-align: center;
 	/*background-image: url(img/intro_background.png); */
-    background-color: rgba(146, 255, 190, 0.11);
+    background-color: rgb(249, 249, 249);
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 100%;
@@ -262,21 +263,25 @@ CV / Home
 .cv_banner {
     height: 280px;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: white;
+    border-radius: 27%;
+    margin-left: 173px;
+    margin-bottom: 50px;
+    box-shadow: -16px 20px 0px 9px #f7d800;
 }
 
 #left_header {
-    background-color: #f55a00;
-    height: 107px;
+    background-color: #f9f9f9;
+    height: 61px;
     width: 970px;
     float: left;
 }
 #header_cv_container {
-    padding-top: 51px;
+    padding-top: 5px;
     margin-left: 820px;
     /* margin-top: 300px; */
     padding-right: 91px;
-        background-color: rgba(0, 188, 245, 0.45);
+        background-color: rgb(249, 249, 249);
 }
 #header_cv_container h2 {
 	color: white;
@@ -383,6 +388,7 @@ ABOUT
 #left_bubble {
     width: 100%;
     height: 447px;
+        box-shadow: 18px -14px 0px 9px #91ffa9;
     /* overflow: hidden; */
 }
 
@@ -399,6 +405,7 @@ ABOUT
     width: 500px !important;
     height: auto;
     border-radius: 12%;
+    box-shadow: 18px 4px 0px 9px #91ffa9;
     overflow: hidden;
     margin-left: 855px;
     position: absolute;
@@ -417,10 +424,25 @@ ABOUT
 
 
 #header_about_container {
-    padding-top: 134px;
-    padding-right: 111px;
-    padding-left: 178px;
+    position: relative;
+    left: -100px;
+    top: 100px;
+
 }
+
+#header_about_container_text {
+    background-color: #c9de16;
+    margin-right: 792px;
+    padding: 10px 10px 10px 400px;
+    border-radius: 93px;
+    height: 300px;
+    width: 900px;
+        box-shadow: 18px -14px 0px 9px #91ffa9;
+}
+
+
+
+
 #header_about_container h3 {
 	
     letter-spacing: 10px;
@@ -438,13 +460,13 @@ ABOUT
 #header_about_container p {
 	font-size: 1rem;
 	color: #333;
-	margin-right: 600px;
+	
 }
 
 #about_body {
     width: 100%;
     background-color: #333;
-    margin-top: 100px;
+    margin-top: 176px;
     height: 100%;
 }
 
@@ -877,10 +899,11 @@ Loader animation
 
 }
 #loader {
-    height: 300px;
-    width: 300px;
+    height: 30px;
+    width: 30px;
     background-color: whitesmoke;
+    box-shadow: 0.8px 1.6px 0.9px 0px rgba(0,0,0,0.34);
     position: relative;
-    top: 30%;
+    top: 50%;
     left: 100%;
 }

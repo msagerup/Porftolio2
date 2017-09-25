@@ -18,27 +18,6 @@ function setBackgroundColor () {
     document.getElementsByTagName("body")[0].style.background="-webkit-linear-gradient(-90deg," + randomColors() + ", " + randomColors() +") fixed, transparent";
 }
 
-//***********************************************
-
-// PAGE NAVIGATION
-
-
-
-
-
-
-
-
-
-//************************************************
-
-
-
-
-
-
-
-
 
 
 // ----------------------------------------------------
