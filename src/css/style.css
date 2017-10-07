@@ -1,31 +1,31 @@
 @font-face {
 	font-family: LOT;
-	src: url(font/LOT.otf);
+	src: url(../font/LOT.otf);
 }
 
 @font-face {
 	font-family: butler_regular;
-	src: url(font/Butler_Regular.otf);
+	src: url(../font/Butler_Regular.otf);
 }
 
 @font-face {
 	font-family: butler_medium;
-	src: url(font/Butler_Medium.otf);
+	src: url(../font/Butler_Medium.otf);
 }
 
 @font-face {
 	font-family: bt-iny;
-	src: url(font/BFTinyHand-Regular.otf);
+	src: url(../font/BFTinyHand-Regular.otf);
 }
 
 @font-face {
 	font-family: cutepunk;
-	src: url(font/Cutepunk_Regular.otf);
+	src: url(../font/Cutepunk_Regular.otf);
 }
 
 @font-face {
 	font-family: norwester;
-	src: url(font/norwester.otf);
+	src: url(../font/norwester.otf);
 }
 
 
