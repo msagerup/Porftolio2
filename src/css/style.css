@@ -436,7 +436,7 @@ ABOUT
     padding: 10px 10px 10px 400px;
     border-radius: 93px;
     height: 300px;
-    width: 900px;
+    width: 1453px;
         box-shadow: 18px -14px 0px 9px #91ffa9;
 }
 
@@ -520,50 +520,80 @@ ABOUT
 ************************************
 */
 
-.load_animation {
-	    position: absolute;
-    right: 0;
-    width: 544px;
-    height: 300px;
-    background-color: red;
-      transition: all 600ms cubic-bezier(0.4, 0, 1, 1);
+
+#work {
+    background-color: #1d1919;
+    height: 100%;
 }
 
-.load_animation:hover {
-	 right: 500;
-	position: absolute;
-    width: 44px;
-    height: 30px;
+#work_container{
+    padding-top: 100px;
+    margin-left: 400px;
+}
+
+.list_loader {
     background-color: red;
+
+}
+
+#list_content {
+
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    display: inline-block;
+    flex-wrap: wrap;
+
+    
+
+}
+
+
+.projects {
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    margin: 0px 10px;
+    
+
 }
 
 /*
 **************************
 */
 
-#work {
-	background-color: #1d1919;
-    height: 100%;
-}
 
 
 
 
-#header_work_container {
-	padding-top: 100px;
-    padding-bottom: 90px;
-    margin-left: 180px;
-   
-}
+/*
+******************************************
+PROJECTS SCROLLER
+******************************************
+*/
 
-#header_work_container h3 {
-	color: #f55a00;
-    letter-spacing: 10px
-}
 
-#header_work_container p {
-	color: white;
-}
+
+
+/*
+
+*************************************************
+PROJECTS
+*************************************************
+*/
+
+
+
+
+
+
+/*
+************************************************
+*/
+
+
+
+
 
 #projects_container {
     background-color: #232323;
@@ -609,112 +639,6 @@ ABOUT
 #header_contact_container p {
 	padding-top: 20px;
 }
-/*
-******************************************
-PROJECTS SCROLLER
-******************************************
-*/
-
-#nav_scroller {
-	display: inline-flex;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-#left {
-	background-color: red;
-	width: 100px;
-	height: 100px;
-	line-height: 100px;
-}
-
-#right {
-	background-color: green;
-	width: 100px;
-	height: 100px;
-	line-height: 100px;
-}
-
-
-/*
-
-*************************************************
-PROJECTS
-*************************************************
-*/
-
-
-
-#project_works_holder {
-
-    padding-top: 10px;
-    display: inline-flex;
-    width: 100%;
-    height: 287px;
-    padding-bottom: 10px;
-    overflow: hidden;
-}
-
-.project_work {
-    width: 400px;
-    height: 270px;
-    /* background-color: blue; */
-    margin-left: 10px;
-    left: 50px;
-    position: relative;
-    overflow: hidden;
-}
-
-.project_work:hover .description{
-	height: 500px;
-	bottom: 400px;
-}
-/*
-************************************************
-*/
-
-
-/*
-
-*************************************************
-PROJECT DESCRIPTION
-*************************************************
-*/
-
-
-.description {
-	width: 400px;
-    background-color: white;
-    height: 0px;
-    position: relative;
-    bottom: 10px;
-    opacity: .9;
-    transition: all 900ms cubic-bezier(0.59, 0.12, 0, 1.52);
-    padding: 10px 15px;
- }
-
- .description_header {
-
- }
-
- .description_header h4 {
- 	font-size: 2rem;
-
- }
-
- .description_body {
-
- }
-
- .description_footer {
- 	float: right;
- 	position: relative;
- 	top: 25%;
- }
-
-/*
-************************************************
-*/
 
 
 /* NAVIGATION
