@@ -431,7 +431,7 @@ ABOUT
 }
 
 #header_about_container_text {
-    background-color: #c9de16;
+    background-color: white;
     margin-right: 792px;
     padding: 10px 10px 10px 400px;
     border-radius: 93px;
@@ -538,11 +538,10 @@ ABOUT
 
 #list_content {
 
-    width: 800px;
-    height: 400px;
+    width: 1000px;
+    height: 800px;
     background-color: white;
-    display: inline-block;
-    flex-wrap: wrap;
+    
 
     
 
@@ -554,7 +553,17 @@ ABOUT
     height: 200px;
     background-color: blue;
     margin: 0px 10px;
+    display: inline-block;
     
+
+}
+
+
+.projects_name {
+
+}
+
+.projects_description {
 
 }
 
