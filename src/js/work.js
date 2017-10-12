@@ -25,22 +25,45 @@ var js_Prosjects = [
     description:  "Sea Food resturant Application with React.Js, it keeps track of the resturant stock, and has the ability to easaly add new fish dishes to the menu",
     GitHubUrl:    "www.github.com/sagerup",
     live:         "www.sagerup.com/seafood",
-    imageURL:     "www.sagerup.com/seafood.jpg"
+    imageURL:     "https://placeimg.com/300/200/any"
   },
   {
     name:         "YouTube Clone",
     description:  "Buildt a clone of Youtube, using React.Js",
     GitHubUrl:    "www.github.com/sagerup/youtube",
     live:         "www.sagerup.com/youtube",
-    imageURL:     "www.sagerup.com/youtube.jpg"
+    imageURL:     "https://placeimg.com/300/200/any"
   },
   {
     name:         "Color Guessing Game",
     description:  "Built a Color guessing came with JavaScript Native",
     GitHubUrl:    "www.github.com/sagerup/color",
     live:         "www.sagerup.com/color",
-    imageURL:     "www.sagerup.com/color.jpg"
+    imageURL:     "https://placeimg.com/300/200/any"
   },
+  {
+    name:         "Color Guessing Game",
+    description:  "Built a Color guessing came with JavaScript Native",
+    GitHubUrl:    "www.github.com/sagerup/color",
+    live:         "www.sagerup.com/color",
+    imageURL:     "https://placeimg.com/300/200/any"
+  },
+  {
+    name:         "Color Guessing Game",
+    description:  "Built a Color guessing came with JavaScript Native",
+    GitHubUrl:    "www.github.com/sagerup/color",
+    live:         "www.sagerup.com/color",
+    imageURL:     "https://placeimg.com/300/200/any"
+  },
+  {
+    name:         "Color Guessing Game",
+    description:  "Built a Color guessing came with JavaScript Native",
+    GitHubUrl:    "www.github.com/sagerup/color",
+    live:         "www.sagerup.com/color",
+    imageURL:     "https://placeimg.com/300/200/any"
+  }
+  
+
 
   
 ]
@@ -61,7 +84,9 @@ function popListContent (list) {
       // Populate and create Projects class
     listContent.innerHTML += '<div class="projects">' + 
                                 '<div class="projects_name">' + list[i].name + '</div>' +
-                                '<div class="projects_description">' + list[i].description + '</div>'
+                                '<div class="projects_description">' + list[i].description + '</div>' +
+                                '<div class ="project_image">' + 
+                                  '<img src="' + list[i].imageURL + '"< />'
 
 
 
