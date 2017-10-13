@@ -1,10 +1,10 @@
-var list = document.querySelector('.list_loader').getElementsByTagName('button');
-var projectsContent;
-var jsButton = list[0];
-var reactButton = list[1];
-var otherButton = list[2];
+const list = document.querySelector('.list_loader').getElementsByTagName('button');
+let projectsContent;
+const jsButton = list[0];
+const reactButton = list[1];
+const otherButton = list[2];
 
-var listContent = document.querySelector('#list_content');
+const listContent = document.querySelector('#list_content');
 
 
 jsButton.addEventListener('click', function () {
@@ -19,7 +19,7 @@ reactButton.addEventListener('click', function () {
 
 
 
-var js_Prosjects = [
+const js_Prosjects = [
   {
     name:         "Sea Food Resturant",
     description:  "Sea Food resturant Application with React.Js, it keeps track of the resturant stock, and has the ability to easaly add new fish dishes to the menu",
@@ -69,7 +69,7 @@ var js_Prosjects = [
 ]
 
 
-var react_Projects = [
+const react_Projects = [
   'React one',
   'Ract Two',
   'React Thre',
@@ -80,7 +80,7 @@ var react_Projects = [
 
 function popListContent (list) {
   listContent.innerHTML = "";
-  for (var i = 0; i < list.length; i++) {
+  for (let i = 0; i < list.length; i++) {
       // Populate and create Projects class
     listContent.innerHTML += '<div class="projects">' + 
                                 '<div class="projects_name">' + list[i].name + '</div>' +
