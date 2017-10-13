@@ -381,14 +381,23 @@ CV FILLERS
 }
 
 .green_filler {
-    width: 25px;
+    width: 19px;
     height: 100%;
     background-color: #91ffa9;
     position: absolute;
     top: 0px;
-    right: 60px;
+    right: 65px;
 }
 
+#blue_line_about {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 19px;
+    height: 100%;
+    background-color: #63dbff;
+
+}
 
 
 /*
@@ -396,6 +405,17 @@ CV FILLERS
 ABOUT
 ******************************************
 */
+
+
+#blue_line_about {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 19px;
+    height: 100%;
+    background-color: #63dbff;
+
+}
 
 #about {
 	background-color: white;
@@ -562,8 +582,8 @@ ABOUT
 
 #work_filler_blue {
     position: absolute;
-    right: 20px;
-    width: 25px;
+    right: 40px;
+    width: 19px;
     height: 290px;
     background-color: #63dbff;
 
