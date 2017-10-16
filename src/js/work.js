@@ -93,7 +93,7 @@ function popListContent (list) {
 
 
                               '</div>';
-      // Define Projects class
+      // Define Projects classs
 
 
   }
