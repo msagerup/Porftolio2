@@ -83,8 +83,8 @@ function popListContent (list) {
   for (let i = 0; i < list.length; i++) {
       // Populate and create Projects class
     listContent.innerHTML += '<div class="projects">' + 
-                                '<div class="projects_name">' + list[i].name + '</div>' +
-                                '<div class="projects_description">' + list[i].description + '</div>' +
+                                '<div class="projects_name"><p>' + list[i].name + '</p></div>' +
+                                '<div class="projects_description"><p>' + list[i].description + '</p></div>' +
                                 '<div class ="project_image">' + 
                                   '<img src="' + list[i].imageURL + '"< />'
 

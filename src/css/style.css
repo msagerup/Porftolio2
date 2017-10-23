@@ -271,7 +271,7 @@ CV / Home
 }
 
 
-}
+
 
 #left_header {
     background-color: #f9f9f9;
@@ -399,6 +399,14 @@ CV FILLERS
 
 }
 
+#white_filler {
+    position: absolute;
+    top: 241px;
+    right: -1px;
+    background-color: #ffffff;
+    width: 200px;
+    height: 100px;
+}
 
 /*
 ******************************************
@@ -414,6 +422,7 @@ ABOUT
     width: 19px;
     height: 100%;
     background-color: #63dbff;
+    z-index: 10;
 
 }
 
@@ -608,10 +617,10 @@ ABOUT
 
 #work_container {
     margin-left: 186px;
-   border-radius: 135px 29px 7px 135px;
--moz-border-radius: 135px 29px 7px 135px;
--webkit-border-radius: 135px 29px 7px 135px;
-       box-shadow: 11px -11px 0px 9px #63dbff;
+    border-radius: 135px 29px 7px 135px;
+    -moz-border-radius: 135px 29px 7px 135px;
+    -webkit-border-radius: 135px 29px 7px 135px;
+    box-shadow: 11px -11px 0px 9px #63dbff;
     overflow: hidden;
 }
 
@@ -635,7 +644,7 @@ ABOUT
 .projects {
     width: 300px;
     height: 200px;
-    background-color: blue;
+    background-color: #ff6600;
     margin: 10px 10px 15px 15px;
     display: inline-flex;
     overflow: hidden;
@@ -646,11 +655,37 @@ ABOUT
 
 .projects_name {
     position: absolute;
+    
 
 }
 
 .projects_description {
     position: absolute;
+    top: 76px;
+    left: 30px;
+    color: white;
+}
+
+.projects_description p {
+    font-weight: 400;
+}
+
+.projects_description p:hover {
+    font-weight: 400;
+     
+}
+
+.project_image img {
+  -webkit-filter: opacity(1);
+  filter: opacity(1);
+
+}
+
+.project_image:hover {
+  -webkit-filter: opacity(.2);
+  filter: opacity(.2);
+  color: #ff6600;
+  
 
 }
 
