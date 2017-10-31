@@ -1,4 +1,5 @@
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const DashBoard = require('webpack-dashboard/plugin');
 
 var path = require('path');
 var webpack = require('webpack');
@@ -18,7 +19,8 @@ module.exports = {
 	      port: 3000,
 	      files: ['*.html', './src/css/*.css'],
 	      server: { baseDir: ['.'] }
-    	})
+    	}),
+    	new DashBoard()
   	]
 
 };
