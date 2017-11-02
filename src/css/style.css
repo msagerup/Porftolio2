@@ -608,9 +608,14 @@ ABOUT
 }
 
 #work_projects_top{
-    background-color: red;
+    background-color: #9dbbc3;
     height: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 40px;
     padding-left: 400px;
+    z-index: 20;
 }
 
 .grown_down {
@@ -619,25 +624,52 @@ ABOUT
 }
 
 #work_projects_top h3 {
-    color: white;
-    font-size: 2rem;
+    color: #333;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    padding-left: 760px;
+    position: fixed;
+    top: 10px;
 }
 
 #work_websites_right {
-    background-color: blue;
-    float: right;
+    background-color: #8fb798;
+    position: absolute;
+    right: 0;
     width: 40px;
     height: 100%;
 }
 
+#work_websites_right h3 {
+    color: #333;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    width: 10px;
+    padding-top: 475px;
+    position: fixed;
+    right: -220px;
+    top: 166px;
+    transform: rotate(90deg);
+}
+
 #code_bottom {
-    background-color: yellow;
+    background-color: #ded280;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 40px;
     width: 80%;
     padding-left: 500px;
     height: 40px;
+}
+
+#code_bottom h3 {
+    color: #333;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    padding-left: 300px;
+    position: fixed;
+    bottom: 10px;
+
 }
 
 

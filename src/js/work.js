@@ -2,41 +2,84 @@
 // document.getElementById('work_websites_right');
 // document.getElementById('code_bottom');
 
-function player() {
-  var growDownAni = anime({
+
+const growDownAni = anime({
   targets: '#work_projects_top',
-  translateX: 250,
-  duration: 2000,
-  delay: function(el, i, l) { return i * 200; }
+  height: {
+    value: '*=22.1',
+    duration: 500,
+    easing: 'easeInOutSine'
+  },
+  direction: 'alternate',
+  autoplay: false,
+  loop: false
 });
-}
+
+const growUpAni = anime({
+  targets: '#code_bottom',
+  height: {
+    value: '*=22.1',
+    duration: 500,
+    easing: 'easeInOutSine'
+  },
+  direction: 'alternate',
+  autoplay: false,
+  loop: false
+});
+
+const growSideAni = anime({
+  targets: '#work_websites_right',
+  width: {
+    value: '*=35',
+    duration: 500,
+    easing: 'easeInOutSine'
+  },
+  direction: 'alternate',
+  autoplay: false,
+  loop: false
+});
 
 
 
-document.getElementById('work_projects_top').onclick = function() {
-  player();
+const menuTop = document.getElementById('work_projects_top');
+const menuBottom = document.getElementById('code_bottom');
+const menuRight = document.getElementById('work_websites_right');
+
+menuTop.onclick = function(e) {
+  if(menuBottom.style.height === "884px") {
+    growUpAni.play();
+    growUpAni.reverse();
+  } else if (menuRight.style.width === "1400px") {
+    growSideAni.play();
+    growSideAni.reverse()
+  }
   growDownAni.play();
   growDownAni.reverse();
 }
 
-
-
-To make a variable calculated in function A visible in function B, you have three choices:
-
-make it a global,
-make it an object property, or
-pass it as a parameter when calling B from A.
-If your program is fairly small then globals are not so bad. Otherwise I would consider using the third method:
-
-function A()
-{
-    var rand_num = calculate_random_number();
-    B(rand_num);
+menuBottom.onclick = function(e) { 
+// Trigger retraction if top menu is down
+  if(menuTop.style.height === "884px") {
+    growDownAni.play();
+    growDownAni.reverse();
+  } else if (menuRight.style.width === "1400px") { 
+    growSideAni.play();
+    growSideAni.reverse();
+  } 
+  growUpAni.play();
+  growUpAni.reverse()
 }
 
-function B(r)
-{
-    use_rand_num(r);
+menuRight.onclick = function(e) {
+  if(menuBottom.style.height === "884px") {
+    growUpAni.play();
+    growUpAni.reverse(); 
+  } else if (menuTop.style.height === "884px") {
+    growDownAni.play();
+    growDownAni.reverse()
+  }
+  growSideAni.play();
+  growSideAni.reverse();
 }
 
 
