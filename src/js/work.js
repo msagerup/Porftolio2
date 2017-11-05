@@ -39,13 +39,15 @@ const growSideAni = anime({
   loop: false
 });
 
-
+const menuTopButton = document.getElementById('projects');
+const menuBottomButton = document.getElementById('code');
+const menuRightButton = document.getElementById('websites');
 
 const menuTop = document.getElementById('work_projects_top');
 const menuBottom = document.getElementById('code_bottom');
 const menuRight = document.getElementById('work_websites_right');
 
-menuTop.onclick = function(e) {
+menuTopButton.onclick = function(e) {
   if(menuBottom.style.height === "884px") {
     growUpAni.play();
     growUpAni.reverse();
@@ -57,7 +59,7 @@ menuTop.onclick = function(e) {
   growDownAni.reverse();
 }
 
-menuBottom.onclick = function(e) { 
+menuBottomButton.onclick = function(e) { 
 // Trigger retraction if top menu is down
   if(menuTop.style.height === "884px") {
     growDownAni.play();
@@ -70,7 +72,7 @@ menuBottom.onclick = function(e) {
   growUpAni.reverse()
 }
 
-menuRight.onclick = function(e) {
+menuRightButton.onclick = function(e) {
   if(menuBottom.style.height === "884px") {
     growUpAni.play();
     growUpAni.reverse(); 

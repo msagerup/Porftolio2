@@ -45,6 +45,14 @@ Phones
 TYPOGRAPHY
 */
 
+header {
+    font-family: norwester;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    color: #333;
+    font-weight: 100;
+}
+
 h1 {
     font-family: bt-iny;
     font-size: 5em;
@@ -272,8 +280,8 @@ CV / Home
     border-radius: 27%;
     margin-left: 173px;
     margin-bottom: 50px;
-    -webkit-box-shadow: -20px 12px 0px 9px #f7d800;
-            box-shadow: -20px 12px 0px 9px #f7d800;
+    -webkit-box-shadow: -20px 12px 0px 9px #ded280;
+            box-shadow: -20px 12px 0px 9px #ded280;
 }
 
 
@@ -379,7 +387,7 @@ CV FILLERS
 .yellow_filler {
     width: 299px;
     height: 21px;
-    background-color: #f7d800;
+    background-color: #ded280;
     position: absolute;
     top: 341px;
     right: 0;
@@ -389,21 +397,13 @@ CV FILLERS
 .green_filler {
     width: 19px;
     height: 100%;
-    background-color: #91ffa9;
+    background-color: #8fb798;
     position: absolute;
     top: 0px;
     right: 65px;
 }
 
-#blue_line_about {
-    position: absolute;
-    right: 40px;
-    top: 0;
-    width: 19px;
-    height: 100%;
-    background-color: #63dbff;
 
-}
 
 #white_filler {
     position: absolute;
@@ -427,7 +427,7 @@ ABOUT
     top: 0;
     width: 19px;
     height: 100%;
-    background-color: #63dbff;
+    background-color: #9dbbc3;
     z-index: 10;
 
 }
@@ -454,9 +454,9 @@ ABOUT
 #left_bubble {
     width: 100%;
     height: 100px;
-       -webkit-box-shadow: 9px -11px 0px 9px #91ffa9;
-               box-shadow: 9px -11px 0px 9px #91ffa9;
-       background-color: white;
+   -webkit-box-shadow: 9px -11px 0px 9px #8fb798;
+   box-shadow: 9px -11px 0px 9px #8fb798;
+   background-color: white;
     /* overflow: hidden; */
 }
 
@@ -473,8 +473,8 @@ ABOUT
     width: 500px !important;
     height: auto;
     border-radius: 12%;
-    -webkit-box-shadow: 7px -1px 0px 12px #91ffa9;
-            box-shadow: 7px -1px 0px 12px #91ffa9;
+    -webkit-box-shadow: 7px -1px 0px 12px #8fb798;;
+    box-shadow: 7px -1px 0px 12px #8fb798;;
     overflow: hidden;
     margin-left: 855px;
     position: absolute;
@@ -515,8 +515,8 @@ ABOUT
     border-radius: 93px;
     height: 300px;
     width: 1455px;
-    -webkit-box-shadow: -2px 12px 0px 9px #91ffa9;
-            box-shadow: -2px 12px 0px 9px #91ffa9;
+    -webkit-box-shadow: -2px 12px 0px 9px #8fb798;
+            box-shadow: -2px 12px 0px 9px #8fb798;
 }
 
 
@@ -623,24 +623,20 @@ ABOUT
     height: 300px;
 }
 
-#work_projects_top h3 {
+
+
+#projects {
     color: #333;
     font-size: 1.2rem;
     letter-spacing: 5px;
     padding-left: 760px;
     position: fixed;
     top: 10px;
+    cursor: pointer;
+    transition: all .4s;
 }
 
-#work_websites_right {
-    background-color: #8fb798;
-    position: absolute;
-    right: 0;
-    width: 40px;
-    height: 100%;
-}
-
-#work_websites_right h3 {
+#websites {
     color: #333;
     font-size: 1.2rem;
     letter-spacing: 5px;
@@ -650,6 +646,8 @@ ABOUT
     right: -220px;
     top: 166px;
     transform: rotate(90deg);
+    cursor: pointer;
+    transition: all .4s;
 }
 
 #code_bottom {
@@ -658,122 +656,121 @@ ABOUT
     bottom: 0;
     right: 40px;
     width: 80%;
-    padding-left: 500px;
+    padding-left: 300px;
     height: 40px;
 }
 
-#code_bottom h3 {
-    color: #333;
+
+#code {
+     color: #333;
     font-size: 1.2rem;
     letter-spacing: 5px;
-    padding-left: 300px;
+    padding-left: 500px;
     position: fixed;
     bottom: 10px;
-
+    cursor: pointer;
+    transition: all .4s;
 }
 
-
-
-.projects {
-    width: 300px;
-    height: 200px;
-    background-color: #ff6600;
-    margin: 10px 10px 15px 15px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    overflow: hidden;
-    position: relative;
-    
-}
-
-
-.projects_name {
-    position: absolute;
-    
-
-}
-
-.projects_description {
-    position: absolute;
-    top: 76px;
-    left: 30px;
+#code:hover {
     color: white;
+    letter-spacing: 20px;
+    padding-left: 490px;
+}
+/*****************************/
+/*CODE CONTAINER CONTENT*/
+/*****************************/
+
+#code_container {
+    width: 1200px;
+    height: 780px;
+    margin-top: 40px;
+    display: inline-flex;
 }
 
-.projects_description p {
-    font-weight: 400;
+#git_hub {
+ 
+    height: 500px;
+    width: 500px;
 }
 
-.projects_description p:hover {
-    font-weight: 400;
-     
+#git_hub_header {
+    margin-top: 40px;
 }
 
-.project_image img {
-  -webkit-filter: opacity(1);
-  filter: opacity(1);
+#github_info {
+    padding-top: 5px;
+}
+
+#git_hub h5 {
+    font-size: 1rem;
+}
+
+#github_ajax {
+    padding-top: 200px;
+}
+
+#github_ajax h3 {
+    line-height: 90px;
+    color: #333;
+    font-size: 3rem;
+}
+
+#project_ajax {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 590px;
+    height: 500px;
+    background: #FAE493;
+}
+
+#project_ajax h3 {
+    padding-top: 200px;
+    font-size: 2rem;
+    color: #4C4C4C;
 
 }
 
-.project_image:hover {
-  -webkit-filter: opacity(.2);
-  filter: opacity(.2);
-  color: #ff6600;
-  
-
+#upcoming {
+    padding-top: 100px;
+    border-left: 2px dashed white;
+    padding-left: 30px;
 }
 
-/*
-**************************
-*/
-
-
-
-
-
-/*
-******************************************
-PROJECTS SCROLLER
-******************************************
-*/
-
-
-
-
-/*
-
-*************************************************
-PROJECTS
-*************************************************
-*/
-
-
-
-
-
-
-/*
-************************************************
-*/
-
-
-
-
-
-#projects_container {
-    background-color: #232323;
-    width: 100%;
-    height: 287px;
-    margin-top: 200px;
+#upcoming h5 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 60px;
 }
 
-#projects_container p {
-    line-height: 1.1;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
+#git_hub_logo_letters {
+    width: 150px;
+    height: auto;
 }
+/******************************/
+
+#projects:hover {
+    color: white;
+    letter-spacing: 20px;
+    padding-left: 710px;
+}
+
+#websites:hover {
+    color: white;
+    letter-spacing: 20px;
+}
+
+
+#work_websites_right {
+    background-color: #8fb798;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 100%;
+}
+
+
+
 
 
 
