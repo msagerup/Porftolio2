@@ -1,8 +1,34 @@
+const gitHubContent = 'https://api.github.com/users/msagerup';
+const projectAjax = document.getElementById('project_ajax');
+const menuTopButton = document.getElementById('projects');
+const menuBottomButton = document.getElementById('code');
+const menuRightButton = document.getElementById('websites');
 
-// document.getElementById('work_websites_right');
-// document.getElementById('code_bottom');
+const menuTop = document.getElementById('work_projects_top');
+const menuBottom = document.getElementById('code_bottom');
+const menuRight = document.getElementById('work_websites_right');
+
+// LOAD GITHUB DATA
+ 
+(function () {
+  const gitHubAPI = new XMLHttpRequest();
+  gitHubAPI.onreadystatechange = function () {
+    if (this.readyState === 4) {
+      window.gitHubInfo = JSON.parse(this.responseText);
+
+    }
+  };
+  gitHubAPI.open('GET', gitHubContent, true);
+  gitHubAPI.send();
+})();
+
+ var gitHubInfo = gitHubInfo;
+// USE GITHUB DATA
+
+projectAjax.innerHTML = gitHubInfo.login;
 
 
+// Animations
 const growDownAni = anime({
   targets: '#work_projects_top',
   height: {
@@ -39,14 +65,7 @@ const growSideAni = anime({
   loop: false
 });
 
-const menuTopButton = document.getElementById('projects');
-const menuBottomButton = document.getElementById('code');
-const menuRightButton = document.getElementById('websites');
-
-const menuTop = document.getElementById('work_projects_top');
-const menuBottom = document.getElementById('code_bottom');
-const menuRight = document.getElementById('work_websites_right');
-
+// 3 way logic on animations, they close when other menu is clicked.
 menuTopButton.onclick = function(e) {
   if(menuBottom.style.height === "884px") {
     growUpAni.play();
@@ -83,6 +102,7 @@ menuRightButton.onclick = function(e) {
   growSideAni.play();
   growSideAni.reverse();
 }
+
 
 
 
