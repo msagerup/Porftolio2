@@ -1,5 +1,6 @@
 const gitHubContent = 'https://api.github.com/users/msagerup';
 const projectAjax = document.getElementById('project_ajax');
+const gitHubAjax= document.getElementById('github_ajax');
 const menuTopButton = document.getElementById('projects');
 const menuBottomButton = document.getElementById('code');
 const menuRightButton = document.getElementById('websites');
@@ -14,18 +15,32 @@ const menuRight = document.getElementById('work_websites_right');
   const gitHubAPI = new XMLHttpRequest();
   gitHubAPI.onreadystatechange = function () {
     if (this.readyState === 4) {
-      window.gitHubInfo = JSON.parse(this.responseText);
-
+      const gitHubInfo = JSON.parse(this.responseText);
+      const gitHubArray = [];
+      // Push GitHub into gitHubArray 
+      gitHubArray.push(gitHubInfo);
+      //Push to global scope
+      window.ghArray = gitHubArray;
     }
   };
   gitHubAPI.open('GET', gitHubContent, true);
   gitHubAPI.send();
 })();
 
- var gitHubInfo = gitHubInfo;
-// USE GITHUB DATA
 
-projectAjax.innerHTML = gitHubInfo.login;
+// Use GITHUB API to populate website 
+
+
+function popProjectAjax () {
+  gitHubAjax.innerHTML = `<div class='gitname'> ${ghArray[0].login} </div>
+                          <div class='git_avatar'><img src="${ghArray[0].avatar_url}"></div>
+                          <div class="git_repo_number"> Numbers of projects on GitHub: ${ghArray[0].public_repos} </div>
+                          <div class="git_last_update"> Last updated on: ${ghArray[0].updated_at}</div>
+
+                        `
+
+}
+
 
 
 // Animations
@@ -105,8 +120,6 @@ menuRightButton.onclick = function(e) {
 
 
 
-
-
 //const list = document.querySelector('.list_loader').getElementsByTagName('button');
 //let projectsContent;
 // const jsButton = list[0];
@@ -125,9 +138,6 @@ menuRightButton.onclick = function(e) {
 // reactButton.addEventListener('click', function () {
 //   popListContent(react_Projects)
 // })
-
-
-
 
 
 
