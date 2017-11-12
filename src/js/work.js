@@ -36,6 +36,7 @@ function popProjectAjax () {
                           <div class='git_avatar'><img src="${ghArray[0].avatar_url}"></div>
                           <div class="git_repo_number"> Numbers of projects on GitHub: ${ghArray[0].public_repos} </div>
                           <div class="git_last_update"> Last updated on: ${ghArray[0].updated_at}</div>
+                          <div></div>
 
                         `
 
