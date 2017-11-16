@@ -147,15 +147,33 @@ body {
 
 #name_tag {
     position: fixed;
-    top: 78px;
+    top: 358px;
     left: 50px;
 }
 
+#nav_menu {
+    position: fixed;
+    left: 100px;
+    top: 40px;
+    margin-top: 10px;
+}
+
+#nav_menu li{
+    display: inline;
+    padding-left: 10px;
+    font-family: 'Lato';
+    font-size: 0.9rem;
+}
+
+#nav_menu li:hover {
+    color: red;
+    cursor: pointer;
+}
 
 #intro {
     z-index: 2;
     position: fixed;
-    top: 229px;
+    top: 500px;
     left: 50px;
     margin-right: 75%;
 }
