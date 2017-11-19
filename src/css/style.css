@@ -725,13 +725,35 @@ ABOUT
 }
 
 #github_ajax {
-    padding-top: 200px;
+    padding-top: 119px;
 }
 
 #github_ajax h3 {
     line-height: 90px;
     color: #333;
     font-size: 3rem;
+}
+
+.git_info {
+    font-family: 'Lato';
+    padding-left: 120px;
+    font-size: 1.1rem;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.git_info_text {
+   
+    font-weight: 400;
+
+}
+
+.git_avatar img {
+    width: 100px;
+    height: auto;
+    float: left;
+    border-radius: 50%;
+
 }
 
 #project_ajax {

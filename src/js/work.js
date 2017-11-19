@@ -1,4 +1,5 @@
 const gitHubContent = 'https://api.github.com/users/msagerup';
+const gitHubRepos = 'https://api.github.com/users/msagerup/repos';
 const projectAjax = document.getElementById('project_ajax');
 const gitHubAjax= document.getElementById('github_ajax');
 const menuTopButton = document.getElementById('projects');
@@ -21,27 +22,50 @@ const menuRight = document.getElementById('work_websites_right');
       gitHubArray.push(gitHubInfo);
       //Push to global scope
       window.ghArray = gitHubArray;
+      // Load Info to page
+      GitHubAjax();
     }
   };
   gitHubAPI.open('GET', gitHubContent, true);
   gitHubAPI.send();
 })();
 
+// Load GitHubs Repo Info
+
+(function () {
+  const gitHubRepoAPI = new XMLHttpRequest();
+  gitHubRepoAPI.onreadystatechange = function () {
+    if (this.readyState === 4) {
+      const gitHubRepoInfo = JSON.parse(this.responseText);
+      const gitHubRepo = [];
+      // Push GitHubRepoInfo into GitHubRepo
+      gitHubRepo.push(gitHubRepoInfo);
+      // Push to Window Scope
+      window.gitHubRepo = gitHubRepo;
+      gitHubProjectAjax();
+    }
+  };
+  gitHubRepoAPI.open('GET', gitHubRepos, true);
+  gitHubRepoAPI.send();
+}());
+
 
 // Use GITHUB API to populate website 
 
-
-function popProjectAjax () {
-  gitHubAjax.innerHTML = `<div class='gitname'> ${ghArray[0].login} </div>
+function GitHubAjax () {
+  gitHubAjax.innerHTML = `
                           <div class='git_avatar'><img src="${ghArray[0].avatar_url}"></div>
-                          <div class="git_repo_number"> Numbers of projects on GitHub: ${ghArray[0].public_repos} </div>
-                          <div class="git_last_update"> Last updated on: ${ghArray[0].updated_at}</div>
-                          <div></div>
-
+                          <div class='gitname git_info'> User Name: <span class="git_info_text">${ghArray[0].login} </span></div>
+                          <div class="git_repo_number git_info"> Numbers of projects on GitHub: <span class="git_info_text">${ghArray[0].public_repos}</span> </div>
+                          <div class="git_last_update git_info"> GitHub updated on: <span class="git_info_text"> ${ghArray[0].updated_at}</span></div>
+                          
                         `
 
 }
 
+function gitHubProjectAjax () {
+  projectAjax.innerHTML = gitHubRepo[0]
+}
 
 
 // Animations
