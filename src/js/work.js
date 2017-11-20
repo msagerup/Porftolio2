@@ -64,7 +64,7 @@ function GitHubAjax () {
 }
 
 function gitHubProjectAjax () {
-  projectAjax.innerHTML = gitHubRepo[0]
+  projectAjax.innerHTML = gitHubRepo[0][0]
 }
 
 
