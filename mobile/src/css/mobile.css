@@ -1,8 +1,12 @@
+
 .top_bar{
   height: 400px;
+  background-color: red;
 }
 
-.header_title{
-  font-size: 20px;
-}
+.header_tite {
+   color: white;
+  font-size: 15rem;
+  margin: 0 auto;
+5
 
