@@ -1,4 +1,6 @@
-
+html {
+	max-width:420px;
+}
 .top_bar{
   height: 400px;
   background-color: red;
