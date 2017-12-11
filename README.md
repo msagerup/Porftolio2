@@ -1,5 +1,4 @@
-#100daysofCode Challange
+Started to build a webpage to practise Essential consepts lerned. 
+When I started this this project I did not know ES 6. It came to a stage where there was so many outdated consept on how to structure the website that it has become a "legacy" prosject. It was a great learning prosject. And a lot of different consepts was learned building this website. 
 
-First day: (2 June 2017)
-
-Joined the #100daysofCode, I continued to work on my second portfolio website, did a lot of work on the score keeper website to practice JS. Considering to implement bootsraps responsive grid or just make my own for practice.  
+as of 11 December 2017. I will lay it rest in its GitHub grave. RIP
